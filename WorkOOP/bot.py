@@ -186,6 +186,9 @@ class bot:
                         bot.send_message(message.chat.id, str_.format(message.from_user,
                                                                       bot.get_me()), parse_mode='html')
 
+                    del obj_convertor
+                    
+                del obj_checker
         # LAUNCH
         if (self.starter):
             bot.polling()
